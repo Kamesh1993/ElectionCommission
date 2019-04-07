@@ -1,0 +1,61 @@
+﻿{% extends "app/layout.html" %}
+
+{% block content %}
+    <!DOCTYPE html>
+    <html lang='en'>
+        <head>
+            <meta charset='utf-8'/>
+     <link rel='icon' href='images/fav.png'/>
+     <title>Election Analysis</title>
+     <link href='../../static/app/content/site.css' rel='stylesheet'/>
+     <meta http-equiv='Content-type' content='text/html;charset=utf-8'>
+     <meta name='viewport' content='width=device-width, initial-scale=1'>
+     <!-- Carousel Links Start -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+     <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>
+     <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+     <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script>
+    <script type='text/javascript' src='../../static/app/scripts/ruby.js'></script>
+    <script type="text/javascript" src="../../static/app/scripts/trendcomparision.js"></script>
+    
+     <!-- Carousel Links End -->
+        </head>
+    <body>
+
+
+    <div id='header'>
+    	<div id='logo'>
+    	<a href='index.html'></a>
+    	</div>
+    </div>
+    <div class='clear'></div>
+    <div id='bg'>
+    <br>
+<center>
+<div id="state">
+<b>Please Select the State and Constituency</b>
+        &nbsp;
+		<br><br>
+       <form method="POST" action="/const" onsubmit="return checkState() && checkConstituency()">
+           <select name="dropdown" style="width: 250px; height: 30px; color:black; font-weight:bold; background:lightgray;"      id="state1" onchange="update()">
+        </select>
+		   <select name="dropdown1" style="width: 250px; height: 30px; color:black; font-weight:bold; background:lightgray;"      id="constituency1" >
+        </select>
+		   <br>
+		   <br>
+           <p><input type="submit" name="submitname" value="Submit"/></p>
+       </form>
+</div>
+</center>
+<br>
+<div id='footer'>
+	<center><p>&copy Designed by RUBY</p></center>
+</div>
+</div>
+
+
+    </body>
+</html>
+
+
+{% endblock %}

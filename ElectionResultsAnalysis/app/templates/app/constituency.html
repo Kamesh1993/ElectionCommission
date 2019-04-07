@@ -32,20 +32,10 @@
     <div id='bg'>
     <br>
 <center>
-<div id="state">
-<b>Please Select the State and Constituency</b>
-        &nbsp;
-		<br><br>
-       <form method="POST" action="/const" onsubmit="return checkState() && checkConstituency()">
-           <select name="dropdown" style="width: 250px; height: 30px; color:black; font-weight:bold; background:lightgray;"      id="state1" onchange="update()">
-        </select>
-		   <select name="dropdown1" style="width: 250px; height: 30px; color:black; font-weight:bold; background:lightgray;"      id="constituency1" >
-        </select>
-		   <br>
-		   <br>
-           <p><input type="submit" name="submitname" value="Submit"/></p>
-       </form>
-</div>
+
+    <p><h2>Constituencywise trends for {{state}} and {{const}} constituency</h2></p>
+        <p><a href="/const" class="btn btn-primary btn-large">Back</a></p>
+
     <div id="graph">
         <img src='../../static/plots/graph.png'>
     </div>

@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <Name>ElectionResultsAnalysis</Name>
+    <RootNamespace>ElectionResultsAnalysis</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>54d07a8d-d55a-4b6b-b451-b5cf5536af0d</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <ProjectTypeGuids>{5F0BE9CA-D677-4A4D-8806-6076C0FAAD37};{349c5851-65df-11da-9384-00065b846f21};{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <StartupFile>manage.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <WebBrowserUrl>http://localhost</WebBrowserUrl>
+    <LaunchProvider>Django launcher</LaunchProvider>
+    <DjangoSettingsModule>ElectionResultsAnalysis.settings</DjangoSettingsModule>
+    <OutputPath>.</OutputPath>
+    <SuppressCollectPythonCloudServiceFiles>true</SuppressCollectPythonCloudServiceFiles>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="app\forms.py" />
+    <Compile Include="app\models.py" />
+    <Compile Include="app\tests.py" />
+    <Compile Include="app\views.py" />
+    <Compile Include="app\__init__.py" />
+    <Compile Include="app\migrations\__init__.py" />
+    <Compile Include="manage.py" />
+    <Compile Include="ElectionResultsAnalysis\__init__.py" />
+    <Compile Include="ElectionResultsAnalysis\settings.py" />
+    <Compile Include="ElectionResultsAnalysis\urls.py" />
+    <Compile Include="ElectionResultsAnalysis\wsgi.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="app\" />
+    <Folder Include="app\migrations\" />
+    <Folder Include="app\static\" />
+    <Folder Include="app\static\app\" />
+    <Folder Include="app\static\app\content\" />
+    <Folder Include="app\static\app\fonts\" />
+    <Folder Include="app\static\app\scripts\" />
+    <Folder Include="app\static\data\" />
+    <Folder Include="app\static\data\Chattisgarh\" />
+    <Folder Include="app\static\data\MadhyaPradesh\" />
+    <Folder Include="app\static\data\Mizoram\" />
+    <Folder Include="app\static\data\Rajasthan\" />
+    <Folder Include="app\static\data\Telangana\" />
+    <Folder Include="app\static\plots\" />
+    <Folder Include="app\static\scrape_data\" />
+    <Folder Include="app\static\trend\" />
+    <Folder Include="app\templates\" />
+    <Folder Include="app\templates\app\" />
+    <Folder Include="ElectionResultsAnalysis\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="app\static\app\scripts\ruby.js" />
+    <Content Include="app\static\app\scripts\trendcomparision.js" />
+    <Content Include="app\static\data\Chattisgarh\Chattisgarh1.csv" />
+    <Content Include="app\static\data\Chattisgarh\Chattisgarh10.csv" />
+    <Content Include="app\static\data\Chattisgarh\Chattisgarh11.csv" />
+    <Content Include="app\static\data\Chattisgarh\Chattisgarh12.csv" />
+    <Content Include="app\static\data\Chattisgarh\Chattisgarh13.csv" />
+    <Content Include="app\static\data\Chattisgarh\Chattisgarh14.csv" />
+    <Content Include="app\static\data\Chattisgarh\Chattisgarh15.csv" />
+    <Content Include="app\static\data\Chattisgarh\Chattisgarh16.csv" />
+    <Content Include="app\static\data\Chattisgarh\Chattisgarh17.csv" />
+    <Content Include="app\static\data\Chattisgarh\Chattisgarh18.csv" />
+    <Content Include="app\static\data\Chattisgarh\Chattisgarh19.csv" />
+    <Content Include="app\static\data\Chattisgarh\Chattisgarh2.csv" />
+    <Content Include="app\static\data\Chattisgarh\Chattisgarh20.csv" />
+    <Content Include="app\static\data\Chattisgarh\Chattisgarh21.csv" />
+    <Content Include="app\static\data\Chattisgarh\Chattisgarh22.csv" />
+    <Content Include="app\static\data\Chattisgarh\Chattisgarh23.csv" />
+    <Content Include="app\static\data\Chattisgarh\Chattisgarh24.csv" />
+    <Content Include="app\static\data\Chattisgarh\Chattisgarh25.csv" />
+    <Content Include="app\static\data\Chattisgarh\Chattisgarh26.csv" />
+    <Content Include="app\static\data\Chattisgarh\Chattisgarh27.csv" />
+    <Content Include="app\static\data\Chattisgarh\Chattisgarh28.csv" />
+    <Content Include="app\static\data\Chattisgarh\Chattisgarh29.csv" />
+    <Content Include="app\static\data\Chattisgarh\Chattisgarh3.csv" />
+    <Content Include="app\static\data\Chattisgarh\Chattisgarh30.csv" />
+    <Content Include="app\static\data\Chattisgarh\Chattisgarh31.csv" />
+    <Content Include="app\static\data\Chattisgarh\Chattisgarh32.csv" />
+    <Content Include="app\static\data\Chattisgarh\Chattisgarh33.csv" />
+    <Content Include="app\static\data\Chattisgarh\Chattisgarh34.csv" />
+    <Content Include="app\static\data\Chattisgarh\Chattisgarh35.csv" />
+    <Content Include="app\static\data\Chattisgarh\Chattisgarh36.csv" />
+    <Content Include="app\static\data\Chattisgarh\Chattisgarh37.csv" />
+    <Content Include="app\static\data\Chattisgarh\Chattisgarh38.csv" />
+    <Content Include="app\static\data\Chattisgarh\Chattisgarh39.csv" />
+    <Content Include="app\static\data\Chattisgarh\Chattisgarh4.csv" />
+    <Content Include="app\static\data\Chattisgarh\Chattisgarh40.csv" />
+    <Content Include="app\static\data\Chattisgarh\Chattisgarh41.csv" />
+    <Content Include="app\static\data\Chattisgarh\Chattisgarh42.csv" />
+    <Content Include="app\static\data\Chattisgarh\Chattisgarh43.csv" />
+    <Content Include="app\static\data\Chattisgarh\Chattisgarh44.csv" />
+    <Content Include="app\static\data\Chattisgarh\Chattisgarh45.csv" />
+    <Content Include="app\static\data\Chattisgarh\Chattisgarh46.csv" />
+    <Content Include="app\static\data\Chattisgarh\Chattisgarh47.csv" />
+    <Content Include="app\static\data\Chattisgarh\Chattisgarh48.csv" />
+    <Content Include="app\static\data\Chattisgarh\Chattisgarh49.csv" />
+    <Content Include="app\static\data\Chattisgarh\Chattisgarh5.csv" />
+    <Content Include="app\static\data\Chattisgarh\Chattisgarh50.csv" />
+    <Content Include="app\static\data\Chattisgarh\Chattisgarh51.csv" />
+    <Content Include="app\static\data\Chattisgarh\Chattisgarh52.csv" />
+    <Content Include="app\static\data\Chattisgarh\Chattisgarh53.csv" />
+    <Content Include="app\static\data\Chattisgarh\Chattisgarh54.csv" />
+    <Content Include="app\static\data\Chattisgarh\Chattisgarh55.csv" />
+    <Content Include="app\static\data\Chattisgarh\Chattisgarh56.csv" />
+    <Content Include="app\static\data\Chattisgarh\Chattisgarh57.csv" />
+    <Content Include="app\static\data\Chattisgarh\Chattisgarh58.csv" />
+    <Content Include="app\static\data\Chattisgarh\Chattisgarh59.csv" />
+    <Content Include="app\static\data\Chattisgarh\Chattisgarh6.csv" />
+    <Content Include="app\static\data\Chattisgarh\Chattisgarh60.csv" />
+    <Content Include="app\static\data\Chattisgarh\Chattisgarh61.csv" />
+    <Content Include="app\static\data\Chattisgarh\Chattisgarh62.csv" />
+    <Content Include="app\static\data\Chattisgarh\Chattisgarh63.csv" />
+    <Content Include="app\static\data\Chattisgarh\Chattisgarh64.csv" />
+    <Content Include="app\static\data\Chattisgarh\Chattisgarh65.csv" />
+    <Content Include="app\static\data\Chattisgarh\Chattisgarh66.csv" />
+    <Content Include="app\static\data\Chattisgarh\Chattisgarh67.csv" />
+    <Content Include="app\static\data\Chattisgarh\Chattisgarh68.csv" />
+    <Content Include="app\static\data\Chattisgarh\Chattisgarh69.csv" />
+    <Content Include="app\static\data\Chattisgarh\Chattisgarh7.csv" />
+    <Content Include="app\static\data\Chattisgarh\Chattisgarh70.csv" />
+    <Content Include="app\static\data\Chattisgarh\Chattisgarh71.csv" />
+    <Content Include="app\static\data\Chattisgarh\Chattisgarh72.csv" />
+    <Content Include="app\static\data\Chattisgarh\Chattisgarh73.csv" />
+    <Content Include="app\static\data\Chattisgarh\Chattisgarh74.csv" />
+    <Content Include="app\static\data\Chattisgarh\Chattisgarh75.csv" />
+    <Content Include="app\static\data\Chattisgarh\Chattisgarh76.csv" />
+    <Content Include="app\static\data\Chattisgarh\Chattisgarh77.csv" />
+    <Content Include="app\static\data\Chattisgarh\Chattisgarh78.csv" />
+    <Content Include="app\static\data\Chattisgarh\Chattisgarh79.csv" />
+    <Content Include="app\static\data\Chattisgarh\Chattisgarh8.csv" />
+    <Content Include="app\static\data\Chattisgarh\Chattisgarh80.csv" />
+    <Content Include="app\static\data\Chattisgarh\Chattisgarh81.csv" />
+    <Content Include="app\static\data\Chattisgarh\Chattisgarh82.csv" />
+    <Content Include="app\static\data\Chattisgarh\Chattisgarh83.csv" />
+    <Content Include="app\static\data\Chattisgarh\Chattisgarh84.csv" />
+    <Content Include="app\static\data\Chattisgarh\Chattisgarh85.csv" />
+    <Content Include="app\static\data\Chattisgarh\Chattisgarh86.csv" />
+    <Content Include="app\static\data\Chattisgarh\Chattisgarh87.csv" />
+    <Content Include="app\static\data\Chattisgarh\Chattisgarh88.csv" />
+    <Content Include="app\static\data\Chattisgarh\Chattisgarh89.csv" />
+    <Content Include="app\static\data\Chattisgarh\Chattisgarh9.csv" />
+    <Content Include="app\static\data\Chattisgarh\Chattisgarh90.csv" />
+    <Content Include="app\static\data\MadhyaPradesh\MadhyaPradesh108.csv" />
+    <Content Include="app\static\data\MadhyaPradesh\MadhyaPradesh130.csv" />
+    <Content Include="app\static\data\MadhyaPradesh\MadhyaPradesh131.csv" />
+    <Content Include="app\static\data\MadhyaPradesh\MadhyaPradesh157.csv" />
+    <Content Include="app\static\data\MadhyaPradesh\MadhyaPradesh166.csv" />
+    <Content Include="app\static\data\MadhyaPradesh\MadhyaPradesh174.csv" />
+    <Content Include="app\static\data\MadhyaPradesh\MadhyaPradesh223.csv" />
+    <Content Include="app\static\data\MadhyaPradesh\MadhyaPradesh42.csv" />
+    <Content Include="app\static\data\MadhyaPradesh\MadhyaPradesh9.csv" />
+    <Content Include="app\static\data\MadhyaPradesh\MadhyaPradesh96.csv" />
+    <Content Include="app\static\data\Mizoram\Mizoram10.csv" />
+    <Content Include="app\static\data\Mizoram\Mizoram11.csv" />
+    <Content Include="app\static\data\Mizoram\Mizoram12.csv" />
+    <Content Include="app\static\data\Mizoram\Mizoram13.csv" />
+    <Content Include="app\static\data\Mizoram\Mizoram14.csv" />
+    <Content Include="app\static\data\Mizoram\Mizoram15.csv" />
+    <Content Include="app\static\data\Mizoram\Mizoram16.csv" />
+    <Content Include="app\static\data\Mizoram\Mizoram17.csv" />
+    <Content Include="app\static\data\Mizoram\Mizoram18.csv" />
+    <Content Include="app\static\data\Mizoram\Mizoram19.csv" />
+    <Content Include="app\static\data\Mizoram\Mizoram20.csv" />
+    <Content Include="app\static\data\Rajasthan\Rajasthan120.csv" />
+    <Content Include="app\static\data\Rajasthan\Rajasthan141.csv" />
+    <Content Include="app\static\data\Rajasthan\Rajasthan173.csv" />
+    <Content Include="app\static\data\Rajasthan\Rajasthan177.csv" />
+    <Content Include="app\static\data\Rajasthan\Rajasthan193.csv" />
+    <Content Include="app\static\data\Rajasthan\Rajasthan47.csv" />
+    <Content Include="app\static\data\Rajasthan\Rajasthan56.csv" />
+    <Content Include="app\static\data\Rajasthan\Rajasthan57.csv" />
+    <Content Include="app\static\data\Rajasthan\Rajasthan63.csv" />
+    <Content Include="app\static\data\Rajasthan\Rajasthan78.csv" />
+    <Content Include="app\static\data\Telangana\Telangana109.csv" />
+    <Content Include="app\static\data\Telangana\Telangana11.csv" />
+    <Content Include="app\static\data\Telangana\Telangana13.csv" />
+    <Content Include="app\static\data\Telangana\Telangana2.csv" />
+    <Content Include="app\static\data\Telangana\Telangana21.csv" />
+    <Content Include="app\static\data\Telangana\Telangana41.csv" />
+    <Content Include="app\static\data\Telangana\Telangana53.csv" />
+    <Content Include="app\static\data\Telangana\Telangana79.csv" />
+    <Content Include="app\static\data\Telangana\Telangana8.csv" />
+    <Content Include="app\static\data\Telangana\Telangana97.csv" />
+    <Content Include="app\static\plots\Chattisgarh.png" />
+    <Content Include="app\static\plots\MadhyaPradesh.png" />
+    <Content Include="app\static\plots\Mizoram.png" />
+    <Content Include="app\static\plots\Rajasthan.png" />
+    <Content Include="app\static\plots\Telangana.png" />
+    <Content Include="app\static\scrape_data\Chattisgarh.csv" />
+    <Content Include="app\static\scrape_data\Chattisgarh.png" />
+    <Content Include="app\static\scrape_data\Chattisgarh29.png" />
+    <Content Include="app\static\scrape_data\Chattisgarh31.png" />
+    <Content Include="app\static\scrape_data\Chattisgarh53.png" />
+    <Content Include="app\static\scrape_data\Chattisgarh55.png" />
+    <Content Include="app\static\scrape_data\Chattisgarh61.png" />
+    <Content Include="app\static\scrape_data\Chattisgarh81.png" />
+    <Content Include="app\static\scrape_data\Chattisgarh87.png" />
+    <Content Include="app\static\scrape_data\Constituencywise_Chattisgarh.csv" />
+    <Content Include="app\static\scrape_data\Constituencywise_Madhyapradesh.csv" />
+    <Content Include="app\static\scrape_data\Constituencywise_Mizoram.csv" />
+    <Content Include="app\static\scrape_data\Constituencywise_Rajasthan.csv" />
+    <Content Include="app\static\scrape_data\Constituencywise_Telangana.csv" />
+    <Content Include="app\static\scrape_data\Madhyapradesh.csv" />
+    <Content Include="app\static\scrape_data\MadhyaPradesh.png" />
+    <Content Include="app\static\scrape_data\MadhyaPradesh130.png" />
+    <Content Include="app\static\scrape_data\MadhyaPradesh157.png" />
+    <Content Include="app\static\scrape_data\MadhyaPradesh166.png" />
+    <Content Include="app\static\scrape_data\MadhyaPradesh174.png" />
+    <Content Include="app\static\scrape_data\MadhyaPradesh223.png" />
+    <Content Include="app\static\scrape_data\MadhyaPradesh32.png" />
+    <Content Include="app\static\scrape_data\MadhyaPradesh9.png" />
+    <Content Include="app\static\scrape_data\Mizoram.csv" />
+    <Content Include="app\static\scrape_data\Mizoram.png" />
+    <Content Include="app\static\scrape_data\Mizoram10.png" />
+    <Content Include="app\static\scrape_data\Mizoram13.png" />
+    <Content Include="app\static\scrape_data\Mizoram14.png" />
+    <Content Include="app\static\scrape_data\Mizoram19.png" />
+    <Content Include="app\static\scrape_data\Mizoram20.png" />
+    <Content Include="app\static\scrape_data\Mizoram21.png" />
+    <Content Include="app\static\scrape_data\Mizoram24.png" />
+    <Content Include="app\static\scrape_data\Mizoram38.png" />
+    <Content Include="app\static\scrape_data\Mizoram40.png" />
+    <Content Include="app\static\scrape_data\Rajasthan.csv" />
+    <Content Include="app\static\scrape_data\Rajasthan.png" />
+    <Content Include="app\static\scrape_data\Rajasthan120.png" />
+    <Content Include="app\static\scrape_data\Rajasthan164.png" />
+    <Content Include="app\static\scrape_data\Rajasthan168.png" />
+    <Content Include="app\static\scrape_data\Rajasthan171.png" />
+    <Content Include="app\static\scrape_data\Rajasthan177.png" />
+    <Content Include="app\static\scrape_data\Rajasthan193.png" />
+    <Content Include="app\static\scrape_data\Rajasthan195.png" />
+    <Content Include="app\static\scrape_data\Rajasthan56.png" />
+    <Content Include="app\static\scrape_data\Rajasthan63.png" />
+    <Content Include="app\static\scrape_data\Rajasthan66.png" />
+    <Content Include="app\static\scrape_data\Telangana.csv" />
+    <Content Include="app\static\scrape_data\Telangana.png" />
+    <Content Include="app\static\scrape_data\Telangana119.png" />
+    <Content Include="app\static\scrape_data\Telangana41.png" />
+    <Content Include="app\static\scrape_data\Telangana7.png" />
+    <Content Include="app\static\scrape_data\Telangana8.png" />
+    <Content Include="app\static\trend\Chattisgarh.csv" />
+    <Content Include="app\static\trend\MadhyaPradesh.csv" />
+    <Content Include="app\static\trend\Mizoram.csv" />
+    <Content Include="app\static\trend\Rajasthan.csv" />
+    <Content Include="app\static\trend\Telangana.csv" />
+    <Content Include="app\templates\app\chattisgarh.html" />
+    <Content Include="app\templates\app\const.html" />
+    <Content Include="app\templates\app\constituency.html" />
+    <Content Include="app\templates\app\madhyapradesh.html" />
+    <Content Include="app\templates\app\mizoram.html" />
+    <Content Include="app\templates\app\party.html" />
+    <Content Include="app\templates\app\rajasthan.html" />
+    <Content Include="app\templates\app\telangana.html" />
+    <Content Include="app\templates\app\trend.html" />
+    <Content Include="requirements.txt" />
+    <Content Include="db.sqlite3" />
+    <Content Include="app\static\app\content\bootstrap.css" />
+    <Content Include="app\static\app\content\bootstrap.min.css" />
+    <Content Include="app\static\app\content\site.css" />
+    <Content Include="app\static\app\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="app\static\app\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="app\static\app\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="app\static\app\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="app\static\app\scripts\bootstrap.js" />
+    <Content Include="app\static\app\scripts\bootstrap.min.js" />
+    <Content Include="app\static\app\scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="app\static\app\scripts\jquery-1.10.2.js" />
+    <Content Include="app\static\app\scripts\jquery-1.10.2.min.js" />
+    <Content Include="app\static\app\scripts\jquery-1.10.2.min.map" />
+    <Content Include="app\static\app\scripts\jquery.validate-vsdoc.js" />
+    <Content Include="app\static\app\scripts\jquery.validate.js" />
+    <Content Include="app\static\app\scripts\jquery.validate.min.js" />
+    <Content Include="app\static\app\scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="app\static\app\scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="app\static\app\scripts\modernizr-2.6.2.js" />
+    <Content Include="app\static\app\scripts\respond.js" />
+    <Content Include="app\static\app\scripts\respond.min.js" />
+    <Content Include="app\static\app\scripts\_references.js" />
+    <Content Include="app\templates\app\about.html" />
+    <Content Include="app\templates\app\contact.html" />
+    <Content Include="app\templates\app\index.html" />
+    <Content Include="app\templates\app\layout.html" />
+    <Content Include="app\templates\app\login.html" />
+    <Content Include="app\templates\app\loginpartial.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="readme.html">
+      <SubType>WebBrowser</SubType>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.Django.targets" />
+  <!-- Specify pre- and post-build commands in the BeforeBuild and 
+       AfterBuild targets below. -->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <AutoAssignPort>True</AutoAssignPort>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

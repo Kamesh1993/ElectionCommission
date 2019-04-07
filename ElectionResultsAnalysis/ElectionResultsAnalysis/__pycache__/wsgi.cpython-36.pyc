@@ -1,20 +1,0 @@
-3
-
-|•¨\¬  ã               @   s0   d Z ddlZejjddƒ ddlmZ eƒ ZdS )až  
-WSGI config for ElectionResultsAnalysis project.
-
-This module contains the WSGI application used by Django's development server
-and any production WSGI deployments. It should expose a module-level variable
-named ``application``. Django's ``runserver`` and ``runfcgi`` commands discover
-this application via the ``WSGI_APPLICATION`` setting.
-
-Usually you will have the standard Django WSGI application here, but it also
-might make sense to replace the whole Django WSGI application with a custom one
-that later delegates to the Django one. For example, you could introduce WSGI
-middleware here, or combine a Django application with an application of another
-framework.
-
-é    NÚDJANGO_SETTINGS_MODULEz ElectionResultsAnalysis.settings)Úget_wsgi_application)Ú__doc__ÚosÚenvironÚ
-setdefaultÚdjango.core.wsgir   Úapplication© r
-   r
-   úkC:\Users\admin\source\repos\ElectionResultsAnalysis\ElectionResultsAnalysis\ElectionResultsAnalysis\wsgi.pyÚ<module>   s   
